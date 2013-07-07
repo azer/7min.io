@@ -1,0 +1,21 @@
+{
+  "name": "7min.io",
+  "repo": "azer/7min.io",
+  "description": "7Min Workout App",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/event":"*",
+    "component/dom":"*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "7min.io.css"
+  ]
+}

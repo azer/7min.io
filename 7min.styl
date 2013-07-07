@@ -1,0 +1,149 @@
+frame()
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+
+center()
+  display -ms-flexbox
+  -ms-flex-pack center
+  -ms-flex-align center
+
+  display -moz-box
+  -moz-box-pack center
+  -moz-box-align center
+
+  display  -webkit-box;
+  -webkit-box-pack center
+  -webkit-box-align center
+
+footer()
+  position fixed
+  bottom 0
+  left 0
+  width 100%
+
+border-radius()
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  border-radius arguments
+
+bigtext()
+  font bold 48px 'Open Sans', sans-serif
+  color #fff
+  text-align center
+
+hidden()
+  display none
+
+html, body
+  margin 0
+  padding 0
+  overflow hidden
+
+body
+  font 12px Helvetica, Arial, sans-serif
+
+.cover
+  frame()
+  z-index 1
+  background url(http://farm8.staticflickr.com/7253/7601325098_affbb2f2c1_b.jpg) no-repeat center
+  background-size cover
+
+.container
+  frame()
+  z-index 2
+
+.timer
+  frame()
+  center()
+
+.timer .start
+  bigtext()
+  opacity 0.5
+
+.timer .countdown
+  hidden()
+
+.timer .countdown .num
+  bigtext()
+  opacity 0.8
+  font-size 300px
+
+.timer .countdown .exercise
+  hidden()
+
+.timer .exercise-view .exercise
+  display block
+
+.exercise-view .num
+  float left
+  width 400px
+  text-align center
+
+.exercise-view .exercise
+  float left
+  width 300px
+
+.exercise h1
+  text-align center
+  opacity 0.7
+  color #fff
+  margin 0
+  padding 0
+
+.exercise img
+  width 400px
+  height 400px
+
+.rest img, .rest .exercise
+  display none
+
+.rest .num
+  width 100%
+
+.progress
+  footer()
+  height 175px
+
+.progress h1
+  bigtext()
+  text-align center
+  color #fff
+  opacity 0.7
+  margin 0
+  padding 0
+
+.progress .all
+  center()
+  padding 10px
+
+.progress .circle
+  float left
+  margin 0 5px 0 0
+  width 50px
+  height 50px
+  background rgba(255, 255, 255, 0.2)
+  border-radius(25px)
+  opacity 0.99
+
+.progress .circle.done
+  background rgba(255, 255, 255, 0.4)
+
+.info
+  footer()
+  font 16px 'Open Sans', sans-serif
+  text-align center
+  height 50px
+
+.info a
+  color rgba(255, 255, 255, 0.50)
+  padding 5px 5px 7px 5px
+  text-decoration none
+
+.info a:hover
+  background rgba(255, 255, 255, 0.2)
+
+.info a span
+  color rgba(255, 255, 255, 0.70)

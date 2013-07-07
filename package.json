@@ -1,0 +1,27 @@
+{
+  "name": "7min",
+  "version": "0.0.0",
+  "description": "7min practice with Rdio",
+  "main": "index.js",
+  "scripts": {
+    "test": "fox"
+  },
+  "repository": {
+    "url": "git@github.com:azer/rdio-7min.git",
+    "type": "git"
+  },
+  "devDependencies": {
+    "one": "3.x",
+    "indev": "0.0.9",
+    "jsify": "*",
+    "stylus": "0.x"
+  },
+  "author": "Azer Koçulu <azer@kodfabrik.com>",
+  "license": "BSD",
+  "dependencies": {
+    "after-time": "0.0.0",
+    "new-format": "0.0.1",
+    "iter": "0.0.0",
+    "attr": "0.0.1"
+  }
+}
