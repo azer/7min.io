@@ -14,7 +14,7 @@ center()
   -moz-box-pack center
   -moz-box-align center
 
-  display  -webkit-box;
+  display  -webkit-box
   -webkit-box-pack center
   -webkit-box-align center
 
@@ -41,6 +41,8 @@ html, body
   margin 0
   padding 0
   overflow hidden
+  width 100%
+  height 100%
 
 body
   font 12px Helvetica, Arial, sans-serif
@@ -56,11 +58,14 @@ body
   z-index 2
 
 .timer
-  frame()
   center()
+  width 100%
+  height 100%
 
 .timer .start
   bigtext()
+
+.timer .start .text
   opacity 0.5
 
 .timer .countdown
@@ -105,6 +110,7 @@ body
 
 .progress
   footer()
+  text-align center
   height 175px
 
 .progress h1
@@ -130,6 +136,27 @@ body
 
 .progress .circle.done
   background rgba(255, 255, 255, 0.4)
+
+.sound
+  margin 10px 0 0 0
+  font 32px 'Open Sans', sans-serif
+  font-weight 800
+  opacity 0.5
+  cursor pointer
+
+.sound svg
+  width 45px
+  height 45px
+
+.sound path
+  display none
+  fill #fff
+
+.sound.on .on-icon, .sound.off .off-icon
+  display block
+
+.sound:hover
+  opacity 1
 
 .info
   footer()
