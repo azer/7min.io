@@ -1,6 +1,6 @@
-onejs = './node_modules/one/bin/onejs'
-stylus = './node_modules/stylus/bin/stylus'
-jsify = './node_modules/jsify/bin/jsify'
+bundle = bin 'one/onejs'
+stylus = bin 'stylus'
+jsify = bin 'jsify'
 
 all 'lib/templates.js', 'dist/index.html', 'dist/7min.js', 'dist/7min.css'
 
@@ -10,14 +10,14 @@ target 'dist/index.html', 'index.html', ->
 
 target 'dist/7min.js', '*.js', 'lib/*.js', 'node_modules', 'components', ->
     debug 'Building dist/7min.js'
-    exec "node #{onejs} index.js -o dist/7min.js"
+    bundle "index.js -o dist/7min.js"
 
 target 'dist/7min.css', '7min.styl', ->
     debug 'Building dist/7min.css'
-    exec "node #{stylus} 7min.styl -o dist/"
+    stylus "7min.styl -o dist/"
 
 target 'lib/templates.js', 'templates', ->
-    exec "node #{jsify} templates/* -o lib/templates.js"
+    jsify "templates/* -o lib/templates.js"
 
 task 'deploy', ->
     mkdir '-p', 'prod'
